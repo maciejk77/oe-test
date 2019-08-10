@@ -1,11 +1,14 @@
 import React from 'react';
-import '../ItemInfoWrapper';
-const ItemInfo = props => {
+import ItemWrapper from '../ItemWrapper';
+
+const ItemInfo = () => {
   return (
-    <section className="item-info">
-      <div>{props.children}</div>
-      {props.isCollapsible && <button>Show more/less</button>}
-    </section>
+    <div className="item-info">
+      <ItemWrapper isCollapsible={false}>
+        <h1>Energy saving light bulb</h1>
+        <p>25 W // Package of 4</p>
+      </ItemWrapper>
+    </div>
   );
 };
 

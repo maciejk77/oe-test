@@ -4,9 +4,9 @@ import './styles.scss';
 const Footer = () => {
   return (
     <footer className="footer">
-      OctopusEnergyLtdisacompanyregisteredinEngland and W ales.
-      Registerednumber:09263424.Registeredoffice:33 Holborn,London,EC1N 2HT.
-      Trading office:20-24BroadwickStreet,London,W 1F8HT
+      Octopus Energy Ltd is a company registered in England and Wales.
+      Registered number:09263424. Registered office: 33 Holborn, London, EC1N
+      2HT. Trading office: 20-24 Broadwick Street, London, W1F8HT
     </footer>
   );
 };

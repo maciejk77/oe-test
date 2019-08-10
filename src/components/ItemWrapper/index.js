@@ -1,12 +1,13 @@
 import React from 'react';
+import './styles.scss';
 
-const ItemInfoWrapper = props => {
+const ItemWrapper = props => {
   return (
-    <section className="item-info">
+    <section className="item-wrapper">
       <div>{props.children}</div>
       {props.isCollapsible && <button>Show more/less</button>}
     </section>
   );
 };
 
-export default ItemInfoWrapper;
+export default ItemWrapper;
