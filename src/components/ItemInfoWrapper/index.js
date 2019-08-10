@@ -1,6 +1,6 @@
 import React from 'react';
-import '../ItemInfoWrapper';
-const ItemInfo = props => {
+
+const ItemInfoWrapper = props => {
   return (
     <section className="item-info">
       <div>{props.children}</div>
@@ -9,4 +9,4 @@ const ItemInfo = props => {
   );
 };
 
-export default ItemInfo;
+export default ItemInfoWrapper;
