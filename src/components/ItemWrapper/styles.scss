@@ -1,17 +1,17 @@
-// below to be disabled, temporary to ease development
+@import '../../styles/variables.scss';
+
 .item-wrapper {
-  // border: 1px dashed red;
-  // // padding: 1px;
-  // //margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
 
   &__toggle {
-    color: red;
+    color: $button-base;
     text-decoration: underline;
   }
 }
 
 .open {
-  height: 400px;
+  height: 25rem;
 }
 
 .close {

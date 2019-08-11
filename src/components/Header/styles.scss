@@ -1,14 +1,20 @@
 @import '../../styles/variables.scss';
 
 .header {
-  // border: 1px solid black;
-  // padding: 1px;
-  //margin-bottom: 5px;
+  background-color: $background-dark;
+  border-top: 0.1rem solid $button-base;
   display: flex;
-  border-top: 2px solid $button-base;
+  justify-content: space-between;
+  padding: 0.1rem 0 0 0.2rem;
 
-  &__image {
-    width: 100%;
-    justify-content: center;
+  &__logo {
+    max-width: 20rem;
+    width: 65%;
+  }
+
+  &__hamburger {
+    align-self: center;
+    height: 2rem;
+    padding-right: 1rem;
   }
 }

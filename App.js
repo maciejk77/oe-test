@@ -21,6 +21,7 @@ class App extends Component {
 
   render() {
     const {
+      itemImageURL,
       itemInfo,
       itemPrice,
       description,
@@ -29,14 +30,14 @@ class App extends Component {
     } = this.props.data;
 
     return (
-      <div>
+      <div style={{ minWidth: '320px' }}>
         <Header />
         <main>
           <ItemInfo data={itemInfo} />
-          <ItemPrice price={itemPrice} />
+          {/* <ItemPrice price={itemPrice} /> */}
           <ItemDescription description={description} />
-          <ItemSpecification specification={specification} />
-          <ItemPerformance performance={performance} />
+          {/* <ItemSpecification specification={specification} />
+          <ItemPerformance performance={performance} /> */}
         </main>
         <Footer />
       </div>

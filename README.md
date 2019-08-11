@@ -12,11 +12,11 @@
 
 ## Installation
 
-`git clone ****` project locally
-`cd oe-test` change into folder
-`npm i` to install all dependencies
-`node server.js` to start Node server (localhost:8080)
-`npm run start` to start app (localhost:3000)
+- `git clone ****` project locally
+- `cd oe-test` change into folder
+- `npm i` to install all dependencies
+- `node server.js` to start Node server (localhost:8080)
+- `npm run start` to start app (localhost:3000)
 
 ## Technology used
 

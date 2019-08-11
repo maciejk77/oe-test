@@ -1,15 +1,16 @@
 // colours
-$background-darker: #020d28;
-$background-lighter: #1d4585;
+$background-dark: #020d28;
+$background-light: #081a44;
 $text-default: #fff;
 $text-base: #92abd0;
 $button-base: #fd117a;
 $button-background: #35598d;
 
 // fonts
-$font-family: Arial;
-$font-small: 12px;
-$font-medium: 24px;
-$font-big: 36px;
+$font-base: 'Montserrat';
+$font-small: 0.75rem;
+$font-medium: 1.2rem;
+$font-larger-medium: 1.75rem;
+$font-big: 2.25rem;
 
 // breakpoints

@@ -1,32 +1,29 @@
 @import '../../styles/variables.scss';
 
 .item-info {
-  //border: 1px solid green;
-  //padding: 1px;
-  //margin-bottom: 5px;
-  font-family: $font-family;
+  background-color: $background-dark;
+  color: $text-default;
+  font-family: $font-base;
+  font-weight: bold;
   line-height: 2.6em;
 
-  background-color: $background-darker;
-  color: $text-default;
-
   &__photo {
-    width: 86%;
-    margin: 10px 30px 5px; // should be flex, centre or smth
+    align-self: center;
+    width: 90%;
+    z-index: 1;
   }
 
   &__header {
-    background-color: $background-lighter; // repetition
-    color: $text-default;
+    background-color: $background-light; // repetition
     font-size: $font-big;
-    padding: 55px 0 10px 45px;
-    margin-top: -40px;
+    margin-top: -3rem;
+    padding: 4rem 0 0.1rem 2rem;
   }
 
   &__description {
-    background-color: $background-lighter; // repetition
+    background-color: $background-light; // repetition
     color: $text-base;
     font-size: $font-medium;
-    padding: 0 0 10px 45px;
+    padding: 0 0 0.5rem 2rem;
   }
 }

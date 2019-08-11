@@ -1,10 +1,10 @@
 @import '../../styles/variables.scss';
 
 .footer {
-  border: 1px solid black;
-  padding: 15px;
-  margin-bottom: 5px;
-
-  background-color: $background-lighter;
+  background-color: $background-light;
   color: $text-base;
+  font-family: $font-base;
+  font-size: $font-small;
+  line-height: 1.2rem;
+  padding: 1rem 0.85rem;
 }

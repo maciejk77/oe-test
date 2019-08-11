@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Fragment, useState } from 'react';
 import './styles.scss';
 
 const ItemWrapper = props => {
@@ -10,7 +10,7 @@ const ItemWrapper = props => {
 
   return (
     <section className={`item-wrapper ${panelState ? ' close' : ' open'}`}>
-      <div>{props.children}</div>
+      <Fragment>{props.children}</Fragment>
       {props.isCollapsible && (
         <div className="item-wrapper__toggle" onClick={handleClick}>
           {panelState ? 'Show more' : 'Show less'}

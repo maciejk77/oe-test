@@ -1,12 +1,12 @@
 import React from 'react';
-import header from '../../assets/header.png';
+import logo from '../../assets/logo.png';
+import hamburger from '../../assets/hamburger.png';
 
-// TODO
-// Fix image, async fetch?
-const Header = props => {
+const Header = () => {
   return (
     <header className="header">
-      <img className="header__image" src={header} />
+      <img className="header__logo" src={logo} />
+      <img className="header__hamburger" src={hamburger} />
     </header>
   );
 };

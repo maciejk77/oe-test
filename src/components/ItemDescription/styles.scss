@@ -1,10 +1,21 @@
 @import '../../styles/variables.scss';
 
 .item-description {
-  // border: 1px solid orange;
-  // padding: 1px;
-  //margin-bottom: 5px;
-
-  background-color: $background-lighter;
+  background-color: $background-light;
   color: $text-default;
+  font-family: $font-base;
+  padding: 2rem;
+
+  &__header {
+    font-size: $font-larger-medium;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    color: $text-base;
+    font-size: $font-medium;
+    line-height: 1.4rem;
+    margin-bottom: 1rem;
+  }
 }
