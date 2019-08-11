@@ -5,6 +5,27 @@
   },
   "itemPrice": "12.99",
   "description": "Available in 7 watts, 9 watts, 11 watts Spiral Light bulb in B22, bulb switches on instantly, no wiaint around warm start and ficker free features...",
-  "specification": "Brand Philips Item Weight 77 g",
+  "specification": [
+    {
+      "key": "Brand",
+      "value": "Philips"
+    },
+    {
+      "key": "Item weight",
+      "value": "77g"
+    },
+    {
+      "key": "Dimensions",
+      "value": "12.6x6.2x6.2cm"
+    },
+    {
+      "key": "Item model number",
+      "value": "E27 ES"
+    },
+    {
+      "key": "Colour",
+      "value": "Cool daylight"
+    }
+  ],
   "performance": "some data for graph here"
 }

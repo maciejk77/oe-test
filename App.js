@@ -36,8 +36,8 @@ class App extends Component {
           <ItemInfo data={itemInfo} />
           {/* <ItemPrice price={itemPrice} /> */}
           <ItemDescription description={description} />
-          {/* <ItemSpecification specification={specification} />
-          <ItemPerformance performance={performance} /> */}
+          <ItemSpecification specification={specification} />
+          {/* <ItemPerformance performance={performance} /> */}
         </main>
         <Footer />
       </div>
