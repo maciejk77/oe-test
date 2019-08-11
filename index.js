@@ -1,30 +1,17 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
+import ReduxPromise from 'redux-promise';
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
 
-import Header from './src/components/Header';
-import ItemInfo from './src/components/ItemInfo';
-import ItemPrice from './src/components/ItemPrice';
-import ItemDescription from './src/components/ItemDescription';
-import ItemSpecification from './src/components/ItemSpecification';
-import ItemPerformance from './src/components/ItemPerformance';
-import Footer from './src/components/Footer';
-import './src/styles/base_styles.scss';
-import './src/styles/app.scss'; // CSS reset
+import App from './App.js';
+import reducers from './src/reducers';
 
-const App = () => {
-  return (
-    <div>
-      <Header />
-      <main>
-        <ItemInfo data={data.itemInfo} />
-        <ItemPrice data={data.itemPrice} />
-        <ItemDescription data={data.description} />
-        <ItemSpecification data={data.specification} />
-        <ItemPerformance data={data.performance} />
-      </main>
-      <Footer />
-    </div>
-  );
-};
+const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(
+  <Provider store={createStoreWithMiddleware(reducers)}>
+    <App />
+  </Provider>,
+  document.getElementById('app')
+);

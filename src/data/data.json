@@ -1,10 +1,9 @@
 {
   "itemInfo": {
-    "photo": "../../assets/bulb.png",
     "header": "Energy saving light bulb",
     "description": "25 W // Packet of 4"
   },
-  "itemPrice": "£12.99",
+  "itemPrice": "12.99",
   "description": "Available in 7 watts, 9 watts, 11 watts Spiral Light bulb in B22, bulb switches on instantly, no wiaint around warm start and ficker free features...",
   "specification": "Brand Philips Item Weight 77 g",
   "performance": "some data for graph here"

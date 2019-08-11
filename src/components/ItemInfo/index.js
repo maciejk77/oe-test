@@ -2,15 +2,21 @@ import React from 'react';
 import ItemWrapper from '../ItemWrapper';
 import itemPhoto from '../../assets/bulb.png';
 
-const ItemInfo = props => {
+const ItemInfo = ({ data }) => {
+  if (!data) {
+    return null;
+  }
+
+  const { header, description } = data;
+
   return (
     <div className="item-info">
       <ItemWrapper isCollapsible={false}>
         <img className="item-info__photo" src={itemPhoto} />
         <h1 className="item-info__header">
-          <div>Energy saving light bulb</div>
+          <div>{header}</div>
         </h1>
-        <p className="item-info__description">25 W // Packet of 4</p>
+        <p className="item-info__description">{description}</p>
       </ItemWrapper>
     </div>
   );
