@@ -1,6 +1,19 @@
 // below to be disabled, temporary to ease development
 .item-wrapper {
-  border: 1px dashed grey;
-  padding: 2px;
-  margin-bottom: 5px;
+  // border: 1px dashed red;
+  // // padding: 1px;
+  // //margin-bottom: 5px;
+
+  &__toggle {
+    color: red;
+    text-decoration: underline;
+  }
+}
+
+.open {
+  height: 400px;
+}
+
+.close {
+  height: auto;
 }

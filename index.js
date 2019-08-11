@@ -9,20 +9,21 @@ import ItemSpecification from './src/components/ItemSpecification';
 import ItemPerformance from './src/components/ItemPerformance';
 import Footer from './src/components/Footer';
 import './src/styles/base_styles.scss';
+import './src/styles/app.scss'; // CSS reset
 
 const App = () => {
   return (
-    <Fragment>
+    <div>
       <Header />
       <main>
-        <ItemInfo />
-        <ItemPrice />
-        <ItemDescription />
-        <ItemSpecification />
-        <ItemPerformance />
+        <ItemInfo data={data.itemInfo} />
+        <ItemPrice data={data.itemPrice} />
+        <ItemDescription data={data.description} />
+        <ItemSpecification data={data.specification} />
+        <ItemPerformance data={data.performance} />
       </main>
       <Footer />
-    </Fragment>
+    </div>
   );
 };
 

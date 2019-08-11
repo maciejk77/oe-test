@@ -2,13 +2,15 @@ import React from 'react';
 import ItemWrapper from '../ItemWrapper';
 import itemPhoto from '../../assets/bulb.png';
 
-const ItemInfo = () => {
+const ItemInfo = props => {
   return (
     <div className="item-info">
       <ItemWrapper isCollapsible={false}>
-        <img src={itemPhoto} width="85%" />
-        <h1>Energy saving light bulb</h1>
-        <p>25 W // Package of 4</p>
+        <img className="item-info__photo" src={itemPhoto} />
+        <h1 className="item-info__header">
+          <div>Energy saving light bulb</div>
+        </h1>
+        <p className="item-info__description">25 W // Packet of 4</p>
       </ItemWrapper>
     </div>
   );

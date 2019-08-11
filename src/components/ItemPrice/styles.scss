@@ -1,5 +1,24 @@
+@import '../../styles/variables.scss';
+
 .item-price {
-  border: 2px solid blue;
-  padding: 2px;
-  margin-bottom: 5px;
+  // border: 1px solid blue;
+  // padding: 1px;
+  //margin-bottom: 5px;
+  background-color: $background-darker; // refactor to -light -dark ?
+  font-size: $font-big;
+  color: #fff;
+
+  &__value {
+  }
+
+  &__size {
+    font-size: $font-medium;
+    background-color: $button-base;
+    color: #fff;
+    width: 200px;
+    height: 75px;
+    border: none;
+    border-radius: 10px;
+    margin: 15px 0 25px 45px;
+  }
 }

@@ -4,7 +4,7 @@ import header from '../../assets/header.png';
 const Header = () => {
   return (
     <header className="header">
-      <img src={header} width="100%" />
+      <img className="header__image" src={header} />
     </header>
   );
 };

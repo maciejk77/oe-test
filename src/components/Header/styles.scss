@@ -1,5 +1,14 @@
+@import '../../styles/variables.scss';
+
 .header {
-  border: 1px solid black;
-  padding: 2px;
-  margin-bottom: 5px;
+  // border: 1px solid black;
+  // padding: 1px;
+  //margin-bottom: 5px;
+  display: flex;
+  border-top: 2px solid $button-base;
+
+  &__image {
+    width: 100%;
+    justify-content: center;
+  }
 }

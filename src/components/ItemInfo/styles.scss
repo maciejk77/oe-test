@@ -1,5 +1,32 @@
+@import '../../styles/variables.scss';
+
 .item-info {
-  border: 2px solid green;
-  padding: 2px;
-  margin-bottom: 5px;
+  //border: 1px solid green;
+  //padding: 1px;
+  //margin-bottom: 5px;
+  font-family: $font-family;
+  line-height: 2.6em;
+
+  background-color: $background-darker;
+  color: $text-default;
+
+  &__photo {
+    width: 86%;
+    margin: 10px 30px 5px; // should be flex, centre or smth
+  }
+
+  &__header {
+    background-color: $background-lighter; // repetition
+    color: $text-default;
+    font-size: $font-big;
+    padding: 55px 0 10px 45px;
+    margin-top: -40px;
+  }
+
+  &__description {
+    background-color: $background-lighter; // repetition
+    color: $text-base;
+    font-size: $font-medium;
+    padding: 0 0 10px 45px;
+  }
 }

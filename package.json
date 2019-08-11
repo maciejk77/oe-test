@@ -4,7 +4,7 @@
   "description": "## Technical challenge - Front-end Developer",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html -p 3000",
+    "start": "parcel index.html -p 3000 && node server.js",
     "build": "parcel build index.html --no-cache"
   },
   "repository": {
@@ -21,6 +21,7 @@
   "dependencies": {
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "express": "^4.17.1",
     "node-sass": "^4.12.0",
     "parcel-bundler": "^1.12.3",
     "react": "^16.9.0",
