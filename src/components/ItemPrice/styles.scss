@@ -1,24 +1,78 @@
 @import '../../styles/variables.scss';
 
+// refactor BEM classes names here and in markup, simplify as well
+
 .item-price {
-  // border: 1px solid blue;
-  // padding: 1px;
-  //margin-bottom: 5px;
-  background-color: $background-dark; // refactor to -light -dark ?
+  background-color: $background-dark;
+  font-family: $font-base;
   font-size: $font-big;
+  font-weight: bold;
   color: #fff;
 
   &__value {
+    font-size: $font-big * 1.1;
   }
 
-  &__size {
-    font-size: $font-medium;
+  &__counter {
+  }
+
+  &__add-button {
+    font-family: $font-base;
+    font-size: $font-small * 2.3;
+    font-weight: bold;
     background-color: $button-base;
     color: #fff;
-    width: 200px;
-    height: 75px;
+    width: 80%;
+    height: 4rem;
     border: none;
     border-radius: 10px;
-    margin: 15px 0 25px 45px;
+    margin-bottom: 3rem;
   }
+
+  // quick fix, to be refactored
+  .foo {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: flex-end;
+  }
+
+  .counter__label {
+    font-size: $font-big/2;
+    color: $button-background;
+    text-align: center;
+  }
+
+  .counter {
+    display: flex;
+    padding-top: 0.5rem;
+    //border: 1px solid orange;
+    width: 6rem;
+    justify-content: space-around;
+
+    &__sign {
+      font-size: $font-small * 2.5;
+      background-color: $button-background;
+      width: 2.2rem;
+      height: 2rem;
+      text-align: center;
+      border-radius: 0.5rem;
+    }
+
+    &__number {
+      padding: 0 0.7rem;
+      font-size: $font-medium * 1.5;
+    }
+  }
+
+  .button-wrapper {
+    align-self: center;
+  }
+}
+
+// quick fix, to be refactored
+.set-wrapper {
+  text-align: center;
+  width: 80%;
+  align-self: center;
 }

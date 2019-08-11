@@ -23,13 +23,29 @@ const ItemPrice = ({ price }) => {
   return (
     <div className="item-price">
       <ItemWrapper isCollapsible={false}>
-        <div>
-          <p className="item-price__value">£{getNumberOfItems * price}</p>
-          <p>QTY {getNumberOfItems}</p>
-          <p onClick={handlePlusClick}>(+)</p>
-          <p onClick={handleMinusClick}>(-)</p>
+        <div className="set-wrapper">
+          <div className="foo">
+            <div className="item-price__value">
+              £{(getNumberOfItems * price).toFixed(2)}
+            </div>
+
+            <div className="item-price__counter">
+              <div className="counter__label">QTY</div>
+              <div className="counter">
+                <div className="counter__sign" onClick={handleMinusClick}>
+                  -
+                </div>
+                <div className="counter__number">{getNumberOfItems}</div>
+                <div className="counter__sign" onClick={handlePlusClick}>
+                  +
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="button-wrapper">
+            <button className="item-price__add-button">Add to cart</button>
+          </div>
         </div>
-        <button className="item-price__size">Add to cart</button>
       </ItemWrapper>
     </div>
   );

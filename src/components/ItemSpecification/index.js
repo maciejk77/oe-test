@@ -13,10 +13,12 @@ const ItemSpecification = ({ specification }) => {
         <table className="item-specification__specification">
           {specification.map(spec => {
             return (
-              <tr className="table-row" key={spec.key}>
-                <td>{spec.key}</td>
-                <td>{spec.value}</td>
-              </tr>
+              <tbody key={spec.key}>
+                <tr className="table-row">
+                  <td>{spec.key}</td>
+                  <td>{spec.value}</td>
+                </tr>
+              </tbody>
             );
           })}
         </table>
