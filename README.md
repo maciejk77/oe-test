@@ -4,7 +4,7 @@
 
 ### Requirements
 
-- Clean, semantic code,
+- Clean, semantic code
 - Front-end that mirrors the design
 - Mobile-first development
 - An example of async service, for FE app to interact with
@@ -14,8 +14,9 @@
 - `git clone ****` project locally
 - `cd oe-test` change into folder
 - `npm i` to install all dependencies
-- `node server.js` to start Node server (localhost:8080)
-- `npm run start` to start app (localhost:3000)
+- `npm run start` to start in parallel Express and Front End app
+- visit `localhost:3000` for see app, `localhost:8080` to see endpoint with JSON data
+- `npm run start` to start app
 - `npm run cy-start` to see Cypress tests for counter (counter_test.js)
 
 ## Technology used
@@ -31,7 +32,6 @@
 
 - Show more/less in ItemWrapper to be placed at the bottom, add some more text and flex-wrap, text-overflow: ellipsis; to be added
 - add chart (feed real data from JSON)
-- Package.json npm run start to start Express.js first and open web app
 - Jest tests? (snapshot?)
 - naming convention in variables.scss
 

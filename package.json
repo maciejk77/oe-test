@@ -4,7 +4,7 @@
   "description": "## Technical challenge - Front-end Developer",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html -p 3000",
+    "start": "node server.js & parcel index.html -p 3000",
     "build": "parcel build index.html --no-cache",
     "cy-start": "node_modules/.bin/cypress open"
   },
