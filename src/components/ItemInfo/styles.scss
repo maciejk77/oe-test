@@ -27,3 +27,49 @@
     padding: 0 0 0.5rem 2rem;
   }
 }
+
+//---------------- MEDIA QUERIES -------------------
+
+@media (min-width: $mobile-landscape) {
+  .item-info {
+    //border: 2px solid orange;
+
+    &__photo {
+      width: 75%;
+    }
+    &__header {
+      padding: 5rem 0 0 6rem;
+    }
+    &__description {
+      padding: 0.5rem 0 2rem 6rem;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .item-info {
+    //border: 2px solid red;
+
+    &__photo {
+      max-width: 60%;
+    }
+
+    &__header,
+    &__description {
+      text-align: center;
+    }
+    &__description {
+      font-size: $font-big * 0.75;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .item-info {
+    //border: 2px solid green;
+    &__header,
+    &__description {
+      font-size: $font-big;
+    }
+  }
+}
