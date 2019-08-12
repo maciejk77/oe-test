@@ -18,3 +18,24 @@
     padding-right: 1rem;
   }
 }
+
+//---------------- MEDIA QUERIES -------------------
+
+// no need for below
+// @media (min-width: $mobile-landscape) {}
+
+@media (min-width: $tablet) {
+  .header {
+    &__hamburger {
+      visibility: hidden;
+    }
+
+    &__logo {
+      margin: 0 auto;
+      padding: 1rem 0;
+    }
+  }
+}
+
+// no need for below
+// @media (min-width: $desktop) {}
