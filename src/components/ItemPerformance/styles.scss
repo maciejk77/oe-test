@@ -3,19 +3,16 @@
 .item-performance {
   background-color: $background-dark;
   color: $text-default;
-  //padding: 0.5rem;
+  padding-left: 2rem;
 
   &__header {
-    padding: 2rem;
+    padding: 2rem 0;
     font-family: $font-base;
     font-size: $font-larger-medium;
-    margin-bottom: 0.5rem;
   }
 
   &__graph {
-    //min-width: 400px;
-    //min-height: 375px;
-    align-self: center;
+    width: 80%;
     margin-bottom: 2rem;
   }
 }
