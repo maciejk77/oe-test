@@ -16,7 +16,6 @@
 - `npm i` to install all dependencies
 - `npm run start` to start in parallel Express and Front End app
 - visit `localhost:3000` for see app, `localhost:8080` to see endpoint with JSON data
-- `npm run start` to start app
 - `npm run cy-start` to see Cypress tests for counter (counter_test.js)
 
 ## Technology used
