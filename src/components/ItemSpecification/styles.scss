@@ -22,3 +22,35 @@
     line-height: 1.75rem;
   }
 }
+
+@media (min-width: $mobile-landscape) {
+  .item-specification {
+    padding: 2rem 5rem;
+  }
+}
+
+@media (min-width: $tablet) {
+  .item-specification {
+    text-align: center;
+    padding: 2rem 8rem;
+    font-size: $font-larger-medium * 0.75;
+    line-height: 1.9rem;
+
+    &__header {
+      font-size: $font-big;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .item-specification {
+    &__header {
+      padding-bottom: 1.5rem;
+    }
+    &__specification {
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+    }
+  }
+}

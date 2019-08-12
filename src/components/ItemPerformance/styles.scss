@@ -19,8 +19,8 @@
 
 @media (min-width: $mobile-landscape) {
   .item-performance {
-    border: 5px solid orange;
-    padding-left: 5rem;
+    padding: 2rem 5rem;
+    font-weight: bold;
 
     &__graph {
       width: 80%;
