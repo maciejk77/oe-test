@@ -27,7 +27,6 @@
 
 ## Comments (to be completed)
 
-- media queries
 - update breakpoint variables in styles
 - Show more/less in ItemWrapper to be placed at the bottom, add some more text and flex-wrap, text-overflow: ellipsis; to be added
 - add chart (feed real data from JSON)
