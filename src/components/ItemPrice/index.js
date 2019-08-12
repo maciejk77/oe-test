@@ -24,7 +24,7 @@ const ItemPrice = ({ price }) => {
   return (
     <div className="item-price">
       <div className="item-price__amount">
-        <div className="amount">
+        <div className="amount" data-cy="amount">
           <div className="amount__pound">£{pounds}</div>
           <span className="amount__pence">.{pence}</span>
         </div>
@@ -32,11 +32,21 @@ const ItemPrice = ({ price }) => {
           <div className="counter__label">QTY</div>
           <div className="counter__panel">
             <div className="panel">
-              <div className="panel__sign" onClick={handleMinusClick}>
+              <div
+                className="panel__sign"
+                onClick={handleMinusClick}
+                data-cy="minus"
+              >
                 -
               </div>
-              <div className="panel__number">{getNumberOfItems}</div>
-              <div className="panel__sign" onClick={handlePlusClick}>
+              <div className="panel__number" data-cy="numberOfItems">
+                {getNumberOfItems}
+              </div>
+              <div
+                className="panel__sign"
+                onClick={handlePlusClick}
+                data-cy="plus"
+              >
                 +
               </div>
             </div>

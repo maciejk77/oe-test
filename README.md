@@ -16,6 +16,7 @@
 - `npm i` to install all dependencies
 - `node server.js` to start Node server (localhost:8080)
 - `npm run start` to start app (localhost:3000)
+- `npm run cy-start` to see Cypress tests for counter (counter_test.js)
 
 ## Technology used
 
@@ -31,8 +32,6 @@
 - add chart (feed real data from JSON)
 - Package.json npm run start to start Express.js first and open web app
 - Jest tests? (snapshot?)
-- Cypress test? (increment/decrement button)
-- Deploy to Heroku?
 - naming convention in variables.scss
 
 ## Screenshots
