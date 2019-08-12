@@ -35,6 +35,7 @@
 - Package.json npm run start to start Express.js first and open web app
 - Jest tests? (snapshot?)
 - Cypress test? (increment/decrement button)
+- Deploy to Heroku?
 
 ## Screenshots
 
