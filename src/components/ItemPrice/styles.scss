@@ -1,7 +1,7 @@
 @import '../../styles/variables.scss';
 
 // some styles not flowing from parent to children ?
-// e.g. font-family: $font-base; // .item-price ===> &__add-button
+// e.g. font-family: $font-typeface; // .item-price ===> &__add-button
 // causing to much repetition, investigate and refactor
 
 .item-price {
@@ -9,7 +9,7 @@
   color: $text-default;
   display: flex;
   flex-direction: column;
-  font-family: $font-base;
+  font-family: $font-typeface;
   font-size: $font-big;
   font-weight: bold;
   justify-content: center;
@@ -28,7 +28,7 @@
     border: none;
     border-radius: 0.5rem;
     color: $text-default;
-    font-family: $font-base;
+    font-family: $font-typeface;
     font-size: $font-larger-medium;
     font-weight: bold;
     height: 4rem;

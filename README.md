@@ -32,7 +32,6 @@
 - Show more/less in ItemWrapper to be placed at the bottom, add some more text and flex-wrap, text-overflow: ellipsis; to be added
 - add chart (feed real data from JSON)
 - Jest tests? (snapshot?)
-- naming convention in variables.scss
 
 ## Screenshots
 
