@@ -25,6 +25,7 @@
 - Sass for styling
 - Parcel for bundling
 - Mobile first, media queries
+- Cypress (e2e testing)
 
 ## Comments (to be completed)
 
