@@ -31,11 +31,16 @@
     }
 
     &__logo {
-      margin: 0 auto;
+      //width: 80rem;
       padding: 1rem 0;
     }
   }
 }
 
-// no need for below
-// @media (min-width: $desktop) {}
+@media (min-width: $desktop) {
+  .header {
+    &__logo {
+      padding: 2rem;
+    }
+  }
+}
