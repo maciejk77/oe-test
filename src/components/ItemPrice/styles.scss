@@ -1,84 +1,83 @@
 @import '../../styles/variables.scss';
 
-// refactor BEM classes names here and in markup, simplify as well
+// some styles not flowing from parent to children ?
+// e.g. font-family: $font-base; // .item-price ===> &__add-button
+// causing to much repetition, investigate and refactor
 
 .item-price {
   background-color: $background-dark;
+  color: $text-default;
+  display: flex;
+  flex-direction: column;
   font-family: $font-base;
   font-size: $font-big;
   font-weight: bold;
-  color: #fff;
+  justify-content: center;
 
-  &__value {
+  &__amount {
+    align-self: center;
     display: flex;
-    font-size: $font-big * 1.1;
-  }
-
-  .pence-value {
-    font-size: $font-medium * 1.3;
-    //align-self: baseline;
-  }
-
-  &__counter {
+    justify-content: space-between;
+    padding: 1rem 1.25rem;
+    width: 90%;
   }
 
   &__add-button {
-    font-family: $font-base;
-    font-size: $font-small * 2.3;
-    font-weight: bold;
-    background-color: $button-base;
-    color: #fff;
-    width: 80%;
-    height: 4rem;
-    border: none;
-    border-radius: 10px;
-    margin-bottom: 3rem;
-  }
-
-  // quick fix, to be refactored
-  .foo {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    align-items: flex-end;
-  }
-
-  .counter__label {
-    font-size: $font-big/2;
-    color: $button-background;
-    text-align: center;
-  }
-
-  .counter {
-    display: flex;
-    padding-top: 0.5rem;
-    //border: 1px solid orange;
-    width: 6rem;
-    justify-content: space-around;
-
-    &__sign {
-      font-size: $font-small * 2.5;
-      background-color: $button-background;
-      width: 2.2rem;
-      height: 2rem;
-      text-align: center;
-      border-radius: 0.5rem;
-    }
-
-    &__number {
-      padding: 0 0.7rem;
-      font-size: $font-medium * 1.5;
-    }
-  }
-
-  .button-wrapper {
     align-self: center;
+    background-color: $button-base;
+    border: none;
+    border-radius: 0.5rem;
+    color: $text-default;
+    font-family: $font-base;
+    font-size: $font-larger-medium;
+    font-weight: bold;
+    height: 4rem;
+    margin-bottom: 2rem;
+    outline: none;
+    padding: 0 3rem;
+    width: 90%;
   }
 }
 
-// quick fix, to be refactored
-.set-wrapper {
-  text-align: center;
-  width: 80%;
-  align-self: center;
+.amount {
+  align-self: flex-end;
+  display: flex;
+  letter-spacing: 0.2rem;
+
+  // &__pound {
+  // }
+
+  &__pence {
+    font-size: $font-larger-medium * 0.9; // TEMP FIX, add new size to variables.scss
+    padding-top: 0.15rem;
+  }
+}
+
+.counter {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  &__label {
+    color: $button-background;
+    font-size: $font-medium;
+    padding-bottom: 0.25rem;
+  }
+}
+
+.panel {
+  display: flex;
+  align-items: center;
+
+  &__sign {
+    font-size: $font-larger-medium;
+    background: $button-background;
+    border-radius: 0.5rem;
+    padding: 0 0.5rem;
+  }
+
+  &__number {
+    font-size: $font-medium * 1.2; // TEMP FIX, add new size to variables.scss
+    padding: 0 0.6rem;
+  }
 }
