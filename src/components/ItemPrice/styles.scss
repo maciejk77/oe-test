@@ -83,3 +83,64 @@
 }
 
 //---------------- MEDIA QUERIES -------------------
+
+@media (min-width: $mobile-landscape) {
+  .item-price {
+    padding: 0 5rem;
+  }
+}
+
+@media (min-width: $tablet) {
+  .item-price {
+    &__amount {
+      width: 50%;
+    }
+  }
+
+  .amount {
+    font-size: $font-big * 1.25;
+
+    &__pence {
+      font-size: $font-big * 0.75;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .item-price {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    &__amount {
+      width: 60%;
+    }
+
+    &__add-button {
+      font-size: $font-big;
+      width: 75%;
+      height: 5rem;
+    }
+
+    .counter {
+      font-size: $font-big * 1.5;
+    }
+  }
+
+  .amount {
+    font-size: $font-big * 2;
+
+    &__pence {
+      font-size: $font-big * 1.5;
+    }
+  }
+
+  .panel {
+    &__sign {
+      padding: 0.6rem 1.2rem;
+    }
+
+    &__number {
+      font-size: 3rem; // TEMP FIX
+    }
+  }
+}
