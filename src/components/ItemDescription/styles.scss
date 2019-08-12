@@ -19,3 +19,32 @@
     margin-bottom: 1rem;
   }
 }
+
+@media (min-width: $mobile-landscape) {
+  .item-description {
+    padding: 2rem 5rem;
+
+    &__header {
+      font-size: $font-big;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .item-description {
+    text-align: center;
+    font-size: $font-larger-medium * 0.75;
+  }
+}
+
+@media (min-width: $desktop) {
+  .item-description {
+    &__description {
+      font-size: $font-larger-medium;
+      line-height: 2rem;
+      width: 80%;
+      margin: 0 auto;
+      padding-bottom: 2rem;
+    }
+  }
+}
