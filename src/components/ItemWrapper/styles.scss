@@ -11,7 +11,12 @@
 }
 
 .open {
-  height: 25rem;
+  height: 17rem;
+
+  item-wrapper__toggle {
+    position: relative;
+    bottom: 0;
+  }
 }
 
 .close {
