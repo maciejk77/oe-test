@@ -1,10 +1,21 @@
 @import '../../styles/variables.scss';
 
 .item-performance {
-  border: 1px solid red;
-  padding: 1px;
-  //margin-bottom: 5px;
-
   background-color: $background-dark;
   color: $text-default;
+  //padding: 0.5rem;
+
+  &__header {
+    padding: 2rem;
+    font-family: $font-base;
+    font-size: $font-larger-medium;
+    margin-bottom: 0.5rem;
+  }
+
+  &__graph {
+    //min-width: 400px;
+    //min-height: 375px;
+    align-self: center;
+    margin-bottom: 2rem;
+  }
 }

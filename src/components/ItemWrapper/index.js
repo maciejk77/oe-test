@@ -9,7 +9,7 @@ const ItemWrapper = props => {
   };
 
   return (
-    <section className={`item-wrapper ${panelState ? ' close' : ' open'}`}>
+    <section className={`item-wrapper ${panelState ? 'close' : 'open'}`}>
       <Fragment>{props.children}</Fragment>
       {props.isCollapsible && (
         <div className="item-wrapper__toggle" onClick={handleClick}>

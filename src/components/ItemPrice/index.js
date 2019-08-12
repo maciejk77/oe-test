@@ -8,6 +8,9 @@ const ItemPrice = ({ price }) => {
   }
 
   const [getNumberOfItems, setNumberOfItems] = useState(1);
+  const fullPrice = (getNumberOfItems * price).toFixed(2).split('.');
+  const pounds = fullPrice[0];
+  const pence = fullPrice[1];
 
   const handlePlusClick = () => {
     setNumberOfItems(getNumberOfItems + 1);
@@ -19,14 +22,15 @@ const ItemPrice = ({ price }) => {
     }
     setNumberOfItems(getNumberOfItems - 1);
   };
-
+  // clean up BEM classes below, some of them are out of order
   return (
     <div className="item-price">
       <ItemWrapper isCollapsible={false}>
         <div className="set-wrapper">
           <div className="foo">
             <div className="item-price__value">
-              £{(getNumberOfItems * price).toFixed(2)}
+              £{pounds}
+              <span className="pence-value">.{pence}</span>
             </div>
 
             <div className="item-price__counter">

@@ -6,7 +6,6 @@
 
 - Clean, semantic code,
 - Front-end that mirrors the design
-- Possibly to use React, Redux, GraphQL/Appolo, Jest/Enzyme but tech stack can be changed
 - Mobile-first development
 - An example of async service, for FE app to interact with
 
@@ -20,6 +19,21 @@
 
 ## Technology used
 
-## Comments
+- React, hooks, npm e.g. axios (data fetching)
+- Express server (serving JSON data)
+- Sass for styling
+- Parcel for bundling
+- Mobile first, media queries
+
+## Comments (to be completed)
+
+- media queries
+- update breakpoint variables in styles
+- Show more/less in ItemWrapper to be placed at the bottom, add some more text and flex-wrap, text-overflow: ellipsis; to be added
+- ItemPrice & ItemPerformance - BEM classes in markup and clean up in Sass
+- add chart (feed real data from JSON)
+- Package.json npm run start to start Express.js first and open web app
+- Jest tests? (snapshot?)
+- Cypress test? (increment/decrement button)
 
 ## Screenshots
