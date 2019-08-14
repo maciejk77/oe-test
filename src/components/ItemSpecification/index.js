@@ -1,30 +1,51 @@
 import React from 'react';
-import ItemWrapper from '../ItemWrapper';
+import withToggle from '../ToggleHOC';
 import './styles.scss';
 
-const ItemSpecification = ({ specification }) => {
+const ItemSpecification = ({
+  toggle,
+  toggleState,
+  specification,
+  additionalSpecification,
+  size
+}) => {
   if (!specification) {
     return null;
   }
+  if (!additionalSpecification) {
+    return null;
+  }
+  console.log(additionalSpecification);
   return (
     <div className="item-specification">
-      <ItemWrapper isCollapsible={true}>
-        <h2 className="item-specification__header">Specification</h2>
-        <table className="item-specification__specification">
-          {specification.map(spec => {
-            return (
-              <tbody key={spec.key}>
-                <tr className="table-row">
-                  <td>{spec.key}</td>
-                  <td>{spec.value}</td>
-                </tr>
-              </tbody>
-            );
+      <h2 className="item-specification__header">Specification</h2>
+      <table className="item-specification__specification">
+        {specification.map(spec => {
+          return (
+            <tbody key={spec.key}>
+              <tr className="table-row">
+                <td>{spec.key}</td>
+                <td>{spec.value}</td>
+              </tr>
+            </tbody>
+          );
+        })}
+      </table>
+      {toggleState && (
+        <ul>
+          {additionalSpecification.map(addSpec => {
+            return <li>{addSpec}</li>;
           })}
-        </table>
-      </ItemWrapper>
+        </ul>
+      )}
+
+      {/* this could be extraced to seperate atom serving this and ItemDescription, 
+      components also refactored to atoms/moclecules/organisms folder structure? */}
+      <div className="item-specification__toggle" onClick={toggle}>
+        {toggleState ? 'Show less' : 'Show more'}
+      </div>
     </div>
   );
 };
 
-export default ItemSpecification;
+export default withToggle(ItemSpecification);

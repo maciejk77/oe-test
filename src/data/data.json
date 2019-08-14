@@ -4,7 +4,7 @@
     "description": "25 W // Packet of 4"
   },
   "itemPrice": "12.99",
-  "description": "Available in 7 watts, 9 watts, 11 watts Spiral Light bulb in B22, bulb switches on instantly, no wiaint around warm start and ficker free features...",
+  "description": "Available in 7 watts, 9 watts, 11 watts Spiral Light bulb in B22, bulb switches on instantly, no wiaint around warm start and ficker free features. The Plumen 001 is the world's first designer low energy light bulb. The dynamic, sculptured form contrasts with the dull regular shapes of existing low energy bulbs, in an attempt to make the Plumen a centrepiece, not an afterthought. The Plumen 001 works like any other high-quality low energy bulb - saving you 80% on your energy bills and lasting 8 times longer than a standard incandescent bulb.",
   "specification": [
     {
       "key": "Brand",
@@ -26,6 +26,16 @@
       "key": "Colour",
       "value": "Cool daylight"
     }
+  ],
+  "additionalSpecification": [
+    "Manufacturer code: 1201011201",
+    "Plumen 001 Low Energy Designer Light",
+    "Bulb E27 Screw fitting",
+    "Lumens: 585 Lumens",
+    "15-watt bulb - equivalent to a 50W incandescent bulb",
+    "A lifetime of 8,000 hours",
+    "Uses 80% less energy than a standard incandescent bulb",
+    "Dimensions: 74mm x 158mm"
   ],
   "performance": "Performance"
 }

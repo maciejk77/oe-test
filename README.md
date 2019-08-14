@@ -20,7 +20,9 @@
 
 ## Technology used
 
-- React, hooks, npm e.g. axios (data fetching)
+- React, Redux
+- hooks, High Order Components (HOC)
+- axios npm (data fetching)
 - Express server (serving JSON data)
 - Sass for styling
 - Parcel for bundling
@@ -29,9 +31,8 @@
 
 ## Comments (to be completed)
 
-- Show more/less in ItemWrapper to be placed at the bottom, add some more text and flex-wrap, text-overflow: ellipsis; to be added
 - add chart (feed real data from JSON)
-- Jest tests? (snapshot?)
+- Jest tests (snapshot and more?)
 
 ## Screenshots
 

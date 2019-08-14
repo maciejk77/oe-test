@@ -1,16 +1,25 @@
 import React from 'react';
-import ItemWrapper from '../ItemWrapper';
+import withToggle from '../ToggleHOC';
 import './styles.scss';
 
-const ItemDescription = ({ description }) => {
+const ItemDescription = ({ toggle, toggleState, description, size }) => {
+  if (!description) {
+    return null;
+  }
+
   return (
     <div className="item-description">
-      <ItemWrapper isCollapsible={true}>
-        <h2 className="item-description__header">Description</h2>
-        <p className="item-description__description">{description}</p>
-      </ItemWrapper>
+      <h2 className="item-description__header">Description</h2>
+
+      <p className="item-description__description">
+        {toggleState ? description : `${description.substring(0, size)}...`}
+      </p>
+
+      <div className="item-wrapper__toggle" onClick={toggle}>
+        {toggleState ? 'Show less' : 'Show more'}
+      </div>
     </div>
   );
 };
 
-export default ItemDescription;
+export default withToggle(ItemDescription);
