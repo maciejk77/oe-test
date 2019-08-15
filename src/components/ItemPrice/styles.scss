@@ -36,6 +36,11 @@
     outline: none;
     padding: 0 3rem;
     width: 80%;
+    box-shadow: inset -0.1rem -0.1rem 0 0 #000,
+      inset 0.1rem 0.1rem 0.1rem 0 #f36aa8,
+      0.2rem 0.2rem 0.1rem rgba(0, 0, 59, 0.6);
+    background-image: linear-gradient(to bottom, #ff0074 0, #6d087c 250%);
+    background-repeat: repeat-x;
   }
 }
 
