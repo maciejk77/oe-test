@@ -15,7 +15,7 @@ const ItemSpecification = ({
   if (!additionalSpecification) {
     return null;
   }
-  console.log(additionalSpecification);
+
   return (
     <div className="item-specification">
       <h2 className="item-specification__header">Specification</h2>
@@ -32,9 +32,9 @@ const ItemSpecification = ({
         })}
       </table>
       {toggleState && (
-        <ul>
+        <ul className="item-specification__additionalSpecification">
           {additionalSpecification.map(addSpec => {
-            return <li>{addSpec}</li>;
+            return <li className="list-item">{addSpec}</li>;
           })}
         </ul>
       )}

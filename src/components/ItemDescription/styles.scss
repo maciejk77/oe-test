@@ -15,8 +15,12 @@
   &__description {
     color: $text-base;
     font-size: $font-medium;
-    line-height: 1.4rem;
+    line-height: 1.65rem;
     margin-bottom: 1rem;
+  }
+
+  &__toggle {
+    color: $button-base;
   }
 }
 

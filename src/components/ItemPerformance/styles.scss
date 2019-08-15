@@ -4,15 +4,17 @@
   background-color: $background-dark;
   color: $text-default;
   padding-left: 2rem;
+  padding-bottom: 1rem;
 
   &__header {
-    padding: 2rem 0;
     font-family: $font-typeface;
     font-size: $font-larger-medium;
+    padding: 2rem 0;
   }
 
   &__graph {
-    max-width: 28.125rem;
+    display: flex;
+    max-width: 18rem;
     margin-bottom: 2rem;
   }
 }
@@ -21,8 +23,8 @@
 
 @media (min-width: $mobile-landscape) {
   .item-performance {
-    padding: 2rem 5rem;
     font-weight: bold;
+    padding: 2rem 5rem;
 
     &__graph {
       width: 80%;
@@ -33,13 +35,14 @@
 @media (min-width: $tablet) {
   .item-performance {
     &__header {
-      text-align: center;
       font-size: $font-big;
+      text-align: center;
     }
 
     &__graph {
+      margin: 0 auto;
+      max-width: 28rem;
       width: 600px;
-      align-self: center;
     }
   }
 }

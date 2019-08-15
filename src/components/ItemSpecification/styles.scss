@@ -15,11 +15,27 @@
   &__specification {
     color: $text-default;
     margin-bottom: 1rem;
+    width: 90%;
+  }
+
+  &__additionalSpecification {
+    line-height: 1.75rem;
+    padding: 1rem 0;
+    text-align: left;
+  }
+
+  &__toggle {
+    color: $button-base;
   }
 
   .table-row {
     border-bottom: 1px solid $background-light;
     line-height: 1.75rem;
+  }
+
+  .list-item {
+    list-style-type: circle;
+    margin-left: 2rem;
   }
 }
 
@@ -49,11 +65,21 @@
     &__header {
       padding-bottom: 1.5rem;
     }
+
     &__specification {
-      width: 80%;
+      //width: 80%;
       margin: 0 auto;
       margin-bottom: 2rem;
       text-align: center;
+      width: 80%;
+    }
+
+    &__additionalSpecification {
+      text-align: center;
+    }
+
+    .list-item {
+      list-style-type: none;
     }
   }
 }

@@ -15,7 +15,7 @@ const ItemDescription = ({ toggle, toggleState, description, size }) => {
         {toggleState ? description : `${description.substring(0, size)}...`}
       </p>
 
-      <div className="item-wrapper__toggle" onClick={toggle}>
+      <div className="item-description__toggle" onClick={toggle}>
         {toggleState ? 'Show less' : 'Show more'}
       </div>
     </div>
