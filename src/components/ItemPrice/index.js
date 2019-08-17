@@ -8,19 +8,16 @@ const ItemPrice = ({ price }) => {
 
   const [getNumberOfItems, setNumberOfItems] = useState(1);
   const fullPrice = (getNumberOfItems * price).toFixed(2).split('.');
-  const pounds = fullPrice[0];
-  const pence = fullPrice[1];
+  const [pounds, pence] = fullPrice;
 
   const handlePlusClick = () => {
     setNumberOfItems(getNumberOfItems + 1);
   };
 
   const handleMinusClick = () => {
-    if (getNumberOfItems === 0) {
-      return 0;
-    }
-    setNumberOfItems(getNumberOfItems - 1);
+    getNumberOfItems === 0 ? 0 : setNumberOfItems(getNumberOfItems - 1);
   };
+
   return (
     <div className="item-price">
       <div className="item-price__amount">

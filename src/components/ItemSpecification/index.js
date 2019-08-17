@@ -6,8 +6,7 @@ const ItemSpecification = ({
   toggle,
   toggleState,
   specification,
-  additionalSpecification,
-  size
+  additionalSpecification
 }) => {
   if (!specification) {
     return null;
