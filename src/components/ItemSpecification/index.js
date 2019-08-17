@@ -33,8 +33,12 @@ const ItemSpecification = ({
       </table>
       {toggleState && (
         <ul className="item-specification__additionalSpecification">
-          {additionalSpecification.map(addSpec => {
-            return <li className="list-item">{addSpec}</li>;
+          {additionalSpecification.map((addSpec, i) => {
+            return (
+              <li className="list-item" key={i}>
+                {addSpec}
+              </li>
+            );
           })}
         </ul>
       )}
