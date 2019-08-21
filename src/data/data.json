@@ -36,5 +36,13 @@
     "A lifetime of 8,000 hours",
     "Uses 80% less energy than a standard incandescent bulb"
   ],
-  "performance": "Performance"
+  "performance": "Performance",
+  "graphData": [
+    { "value": "200", "uv": 1.9, "pv": 200, "xv": 2.1 },
+    { "uv": 2.75, "pv": 250, "xv": 3 },
+    { "uv": 0.5, "pv": 280, "xv": 3.5 },
+    { "value": "300", "uv": 0.2, "pv": 300, "xv": 2.6 },
+    { "uv": 0.125, "pv": 350, "xv": 0.2 },
+    { "value": "400", "uv": 0.1, "pv": 400, "xv": 0.2 }
+  ]
 }

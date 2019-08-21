@@ -31,7 +31,8 @@ class App extends Component {
       description,
       specification,
       additionalSpecification,
-      performance
+      performance,
+      graphData
     } = this.props.data;
 
     return (
@@ -45,7 +46,7 @@ class App extends Component {
             specification={specification}
             additionalSpecification={additionalSpecification}
           />
-          <ItemPerformance performance={performance} />
+          <ItemPerformance performance={performance} graphData={graphData} />
         </main>
         <Footer />
       </div>

@@ -28,10 +28,10 @@
 - Parcel for bundling
 - Mobile first, media queries
 - Cypress (e2e testing)
+- Chart in Recharts.js (data from JSON)
 
 ## Comments (to be completed)
 
-- add chart (feed real data from JSON)
 - Jest tests (snapshot and more?)
 
 ## Screenshots

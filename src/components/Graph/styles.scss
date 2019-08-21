@@ -1,0 +1,41 @@
+@import '../../styles/variables.scss';
+
+.graph {
+  max-width: 300px;
+  max-height: 300px;
+
+  &__linechart {
+    font-family: $font-typeface;
+    font-size: $font-medium;
+  }
+
+  @media (min-width: $tablet) {
+    &__linechart {
+      margin: 0 auto;
+    }
+  }
+}
+
+// @for loop, @each Sass to loop over different sizes? quick fix below, to refactor
+
+@media (min-width: $mobile-landscape) {
+  .graph {
+    max-width: 400px;
+    max-height: 400px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .graph {
+    max-width: 500px;
+    max-height: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop) {
+  .graph {
+    max-width: 600px;
+    max-height: 600px;
+  }
+}
