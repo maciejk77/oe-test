@@ -42,7 +42,7 @@ const ItemSpecification = ({
         </ul>
       )}
 
-      {/* this could be extraced to seperate atom serving this and ItemDescription, 
+      {/* this could be extracted to separate atom serving this and ItemDescription, 
       components also refactored to atoms/moclecules/organisms folder structure? */}
       <div className="item-specification__toggle" onClick={toggle}>
         {toggleState ? 'Show less' : 'Show more'}

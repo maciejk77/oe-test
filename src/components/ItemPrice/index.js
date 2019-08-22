@@ -15,7 +15,7 @@ const ItemPrice = ({ price }) => {
   };
 
   const handleMinusClick = () => {
-    getNumberOfItems === 0 ? 0 : setNumberOfItems(getNumberOfItems - 1);
+    getNumberOfItems === 1 ? 1 : setNumberOfItems(getNumberOfItems - 1);
   };
 
   return (
